@@ -4,7 +4,7 @@ export default class Nav extends React.Component {
 	render() {
 		return (
 			<nav className="navbar navbar-default">
-                <div class="container-fluid">
+                <div className="container-fluid">
 
                     <div className="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -13,7 +13,6 @@ export default class Nav extends React.Component {
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
-                    <a className="navbar-brand" href="#">Brand</a>
                     </div>
 
                     
