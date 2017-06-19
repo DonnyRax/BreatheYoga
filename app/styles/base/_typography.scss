@@ -1,0 +1,66 @@
+﻿/// <reference path="../style.scss" />
+
+
+$default-icon-font-size: 20px;
+$default-icon-line-height: 13px;
+$default-reset-margin: 0px;
+$default-reset-padding: 0px;
+$default-font-size: 12px;
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: $default-font-size;
+}
+
+h1, h2, h3 {
+    font-family: 'Ubuntu', sans-serif;
+    margin: $default-reset-margin;
+    padding-bottom: $default-reset-padding;
+}
+
+h4, h5,
+.text-feature {
+    font-family: 'Ubuntu', sans-serif;
+    margin: $default-reset-margin;
+    padding-bottom: $default-reset-padding;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+h4 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+i {
+    font-size: $default-icon-font-size;
+    line-height: $default-icon-line-height;
+}
+
+.text-underline {
+    text-decoration:underline;
+}
+
+.right-align {
+    text-align:right;
+}
