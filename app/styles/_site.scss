@@ -3,9 +3,6 @@
     top: 0;
 }
 
-a, a:visited, a:hover {
-    color: #000;
-}
 
 #logo {
     width: 400px;
@@ -14,4 +11,8 @@ a, a:visited, a:hover {
 
 span.icon-text {
     margin-left: 5px;
+}
+
+.active {
+    color: $brand-color;
 }

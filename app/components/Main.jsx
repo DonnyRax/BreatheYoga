@@ -5,11 +5,14 @@ import Nav from 'Nav'
 export default class Main extends React.Component {
 	render() {
 		return (
-			<div>
+			<div className="container">
 				<Header/>
 				<Nav/>
-				<h2>Content to go here</h2>
-				
+				<div className="row">
+					<div className="col-lg-12 col-md-12 col-sm-12">
+						{this.props.children}
+					</div>
+				</div>
 			</div>
 		)
 	}

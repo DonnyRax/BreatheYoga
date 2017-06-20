@@ -29,6 +29,11 @@ module.exports = {
       Main: 'app/components/Main.jsx',
       Header: 'app/components/Header.jsx',
 			Nav: 'app/components/Nav.jsx',
+      Home: 'app/components/Home.jsx',
+      About: 'app/components/About.jsx',
+      Yoga: 'app/components/Yoga.jsx',
+      Testimonials: 'app/components/Testimonials.jsx',
+      ContactMe: 'app/components/ContactMe.jsx',
       applicationStyles: 'app/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']

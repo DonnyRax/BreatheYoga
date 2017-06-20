@@ -1,29 +1,30 @@
 import React from 'react'
+import {Link, IndexLink} from 'react-router';
 
 export default class Nav extends React.Component {
 	render() {
 		return (
 			<nav className="navbar navbar-default">
                 <div className="container-fluid">
-
-                    <div className="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span className="sr-only">Toggle navigation</span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
+                <div className="navbar-header">
+                    <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span className="sr-only">Toggle navigation</span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
+                    <span className="icon-bar"></span>
                     </button>
-                    </div>
-
-                    
-                    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <a className="navbar-brand" href="#">Project name</a>
+                </div>
+                <div id="navbar" className="navbar-collapse collapse">
                     <ul className="nav navbar-nav">
-                        <li className="active"><a href="#"><i className="fa fa-female">About</i> <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#"><i className="fa fa-heart">Yoga</i></a></li>
-                        <li><a href="#"><i className="fa fa-star">Testimonials</i></a></li>
-                        <li><a href="#"><i className="fa fa-envelope">Contact Me</i></a></li>
-                    </ul>      
-                    </div>
+                        <li><IndexLink to='/' activeClassName='active' activeStyle={{fontWeight: 'bold'}}>Home</IndexLink></li>
+                        <li><Link to='/about' activeClassName='active' activeStyle={{fontWeight: 'bold'}}>About</Link></li>
+                        <li><Link to='/yoga' activeClassName='active' activeStyle={{fontWeight: 'bold'}}>Yoga</Link></li>
+                        <li><Link to='/testimonials' activeClassName='active' activeStyle={{fontWeight: 'bold'}}>Testimonials</Link></li>
+                        <li><Link to='/contactme' activeClassName='active' activeStyle={{fontWeight: 'bold'}}>Contact Me</Link></li>
+                    </ul>
+                    
+                </div>
                 </div>
             </nav>
 		)
