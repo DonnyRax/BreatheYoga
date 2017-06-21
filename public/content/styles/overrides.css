@@ -1,0 +1,42 @@
+.navbar-default {
+    background-color: #fff;
+    border: 0;
+    border-top: 1px solid #5dbfce;
+    border-bottom: 1px solid #5dbfce;
+    border-radius: 0;
+}
+
+.navbar-header{
+    text-align:center;
+}
+
+.navbar-toggle {
+    float: none;
+    margin-right:0;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a.active-link {
+    color: #5dbfce ;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}

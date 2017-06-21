@@ -1,23 +1,14 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-var Header = React.createClass({
-    contactMe: function(e){
-        alert('To Do');
-    },
+export default class Header extends React.Component{
 	render() {
 		return (
-			<header id="top-header">
-                <div className="row">
-                    <div className="col-lg-4 col-md-4"></div>
-                    <div className="col-lg-4 col-md-4 col-sm-12">
-                        <img id="logo" src="./content/images/breathe-info-white.png" alt="breathe logo" />
-                    </div>
-                    <div className="col-lg-4 col-md-4"></div>
-                </div>                
-            </header>
+            <div id="top-header" className="row">
+                <div id="logo-container" className="col-xs-12 col-sm-12 col-md-12 col-lg-12 center-content">
+                    <img id="logo" src="./content/images/breathe-info-white.png" alt="breathe logo" />
+                </div>
+            </div>                
 		)
 	}
-});
-
-module.exports = Header;
+};
