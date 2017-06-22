@@ -71,3 +71,23 @@
   -webkit-transform: rotate(0);
           transform: rotate(0);
 }
+
+.panel-brand {
+    border: 1px solid #5dbfce;
+}
+/*
+.panel-brand:hover {
+    -webkit-box-shadow: 0px 12px 14px 0px rgba(0,0,0,0.51) !important;
+    -moz-box-shadow: 0px 12px 14px 0px rgba(0,0,0,0.51) !important;
+    box-shadow: 0px 12px 14px 0px rgba(0,0,0,0.51) !important;
+}
+*/
+.page-header-title {
+    color: #5dbfce;
+    text-align: center;
+}
+
+.page-header {
+    margin-top: 0;
+    
+}

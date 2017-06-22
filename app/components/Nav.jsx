@@ -16,11 +16,11 @@ export default class Nav extends React.Component {
                 </div>
                 <div id="navbar" className="navbar-collapse collapse">
                     <ul className="nav navbar-nav">
-                        <li><IndexLink to='/' activeClassName='active-link'>Home</IndexLink></li>
-                        <li><Link to='/about' activeClassName='active-link'>About</Link></li>
-                        <li><Link to='/yoga' activeClassName='active-link'>Yoga</Link></li>
-                        <li><Link to='/testimonials' activeClassName='active-link'>Testimonials</Link></li>
-                        <li><Link to='/contactme' activeClassName='active-link'>Contact Me</Link></li>
+                        <li><IndexLink to='/' activeClassName='active-link'><i className="fa fa-home"></i>Home</IndexLink></li>
+                        <li><Link to='/about' activeClassName='active-link'><i className="fa fa-user"></i>About</Link></li>
+                        <li><Link to='/yoga' activeClassName='active-link'><i className="fa fa-heart"></i>Yoga</Link></li>
+                        <li><Link to='/testimonials' activeClassName='active-link'><i className="fa fa-star"></i>Testimonials</Link></li>
+                        <li><Link to='/contactme' activeClassName='active-link'><i className="fa fa-envelope"></i>Contact Me</Link></li>
                     </ul>
                     
                 </div>
