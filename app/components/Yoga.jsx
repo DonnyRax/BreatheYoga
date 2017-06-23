@@ -11,13 +11,13 @@ var Yoga = (props) =>  {
                 </div>
             </div>
             <div className="row">
-                <div className="col-xs-12 col-md-6">
+                <div className="col-xs-12">
                     <div className="panel panel-brand">
                         <div className="panel-heading">
                             <h3 className="panel-title">breathe 1-2-1</h3>
                         </div>
                         <div className="panel-body">
-                            <p><b>Yoga and Meditation for Health and Wellbeing</b></p>
+                            <p><i className="fa fa-heart-o"></i><b>Yoga and Meditation for Health and Wellbeing</b></p>
                             <p>
                                 This six week individualised programme consists of an initial consultation to discuss your aims and 
                                 objectives of what you would like to achieve through yoga and meditation.  Yoga can help with a variety 
@@ -41,13 +41,13 @@ var Yoga = (props) =>  {
                         </div>
                     </div>
                 </div>
-                <div className="col-xs-12 col-md-6">
+                <div className="col-xs-12">
                     <div className="panel panel-brand">
                         <div className="panel-heading">
                             <h3 className="panel-title">breathe together</h3>
                         </div>
                         <div className="panel-body">
-                            <p><b>Beginners Course: 2x per week for 6 weeks</b></p>
+                            <p><i className="fa fa-heart-o"></i><b>Beginners Course: 2x per week for 6 weeks</b></p>
                             <p>This six week course will introduce a variety of postures and their benefits, 
                             a variety of breathing techniques and their benefits and guide you in relaxation 
                             and meditation techniques.</p>
@@ -61,7 +61,7 @@ var Yoga = (props) =>  {
                                 <li>Relaxation audio</li>
                                 <li>Guided meditation audio</li>
                             </ul>
-                            <p><b>Intermediate Class: 2x per week paid monthly</b></p>
+                            <p><i className="fa fa-heart-o"></i><b>Intermediate Class: 2x per week paid monthly</b></p>
                             <p>Package also includes:</p>
                             <ul className="package-list">
                                 <li>2 x 1 hour 15 mins yoga and meditation classes per week</li>
@@ -76,13 +76,13 @@ var Yoga = (props) =>  {
                 </div>
             </div>
             <div className="row">
-                <div className="col-xs-12 col-md-6">
+                <div className="col-xs-12">
                     <div className="panel panel-brand">
                         <div className="panel-heading">
                             <h3 className="panel-title">breathe wellbeing</h3>
                         </div>
                         <div className="panel-body">
-                            <p><b>Corporate classes for staff wellbeing</b></p>
+                            <p><i className="fa fa-heart-o"></i><b>Corporate classes for staff wellbeing</b></p>
                             <p>Package also includes:</p>
                             <ul className="package-list">
                                 <li>4 x 1 hour 15 mins yoga and meditation classes</li>
@@ -95,13 +95,13 @@ var Yoga = (props) =>  {
                          </div>
                     </div>
                 </div>
-                <div className="col-xs-12 col-md-6">
+                <div className="col-xs-12">
                     <div className="panel panel-brand">
                         <div className="panel-heading">
                             <h3 className="panel-title">breathe retreats</h3>
                         </div>
                         <div className="panel-body">
-                            <p><b>Health and wellbeing retreats: yoga, meditation, HIIT training, nutrition advice, personalised programmes</b></p>
+                            <p><i className="fa fa-heart-o"></i><b>Health and wellbeing retreats: yoga, meditation, HIIT training, nutrition advice, personalised programmes</b></p>
                         </div>
                     </div>
                 </div>

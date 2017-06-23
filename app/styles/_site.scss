@@ -35,5 +35,10 @@ span.icon-text {
 
 .package-list {
     list-style: disc;
-    margin-left: 15px;
+    margin-left: 17px;
+}
+
+.panel-body i.fa-heart-o {
+    margin-right: 5px;
+    color: $brand-color;
 }
