@@ -1,6 +1,6 @@
-@import 'base/_reset.scss';
-@import 'base/_typography.scss';
-@import 'base/_colours.scss';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/colours';
 
-@import '_site.scss';
-@import '_contactform.scss';
+@import 'base/site';
+@import 'components/contactform';
