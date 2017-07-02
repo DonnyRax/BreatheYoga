@@ -1,0 +1,29 @@
+.testimonial-container {
+
+    border: 1px solid $brand-color;
+    border-radius: 4px;
+    padding: 10px;
+
+    .testimonial {
+        font-family: 'Farsan', cursive;
+    }
+
+    .testimonial-date {
+        font-size: 16px;
+        text-align: center;
+
+        i.fa-star {
+            color: gold;
+            margin: 0 10px;
+        }    
+    }
+
+    .testimonial-content {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .tesimonial-signature{
+        font-size: 14px;
+    }
+}
