@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from 'Header'
 import Nav from 'Nav'
+import Footer from 'Footer'
 
 export default class Main extends React.Component {
 	render() {
@@ -9,12 +10,11 @@ export default class Main extends React.Component {
 				<Header/>
 				<Nav/>
 				<div className="row">
-					{/*<div className="col-xs-1"></div>*/}
 					<div className="col-xs-12">
 						{this.props.children}
 					</div>
-					{/*<div className="col-xs-1"></div>*/}
 				</div>
+				<Footer/>
 			</div>
 		)
 	}

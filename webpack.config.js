@@ -34,6 +34,7 @@ module.exports = {
       Yoga: 'app/components/Yoga.jsx',
       Testimonials: 'app/components/Testimonials.jsx',
       ContactMe: 'app/components/ContactMe.jsx',
+      Footer: 'app/components/Footer.jsx',
       applicationStyles: 'app/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']
