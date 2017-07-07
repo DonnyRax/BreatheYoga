@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from 'Footer'
 
 var Home = (props) =>  {
     return (
@@ -16,7 +17,7 @@ var Home = (props) =>  {
                     <img id="yoga-image" src="./content/images/yoga2.jpg" alt="yoga"/>
                 </div>
             </div>
-            {/**/}
+			<Footer/>
         </div>
     )
 }

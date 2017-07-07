@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from 'Header'
 import Nav from 'Nav'
-import Footer from 'Footer'
 
 export default class Main extends React.Component {
 	render() {
@@ -14,7 +13,6 @@ export default class Main extends React.Component {
 						{this.props.children}
 					</div>
 				</div>
-				<Footer/>
 			</div>
 		)
 	}

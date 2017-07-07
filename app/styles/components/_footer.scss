@@ -1,9 +1,12 @@
 #footer{
     margin-top: 30px;
 
-    div#footer-middle {
-        border-left: 1px solid $brand-color;
+    .footer-block {
         border-right: 1px solid $brand-color;
+
+        &:last-child {
+            border-right: 0;
+        }
     }
 
     div#footer-right {
