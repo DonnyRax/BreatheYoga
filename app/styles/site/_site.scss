@@ -47,6 +47,12 @@ span.icon-text {
     margin-left: 17px;
 }
 
+.about-yoga-list {
+    list-style: disc;
+    margin-left: 17px;
+    margin-top: 10px;
+}
+
 .panel-body i.fa-heart-o {
     margin-right: 5px;
     color: $brand-color;
@@ -62,4 +68,20 @@ span.icon-text {
 
 .text-small {
     font-size: 24px;
+}
+
+#image-float-right {
+    width: 30%;
+    height: 30%;
+    border-radius: 4px;
+    float: right;
+    margin-left: 10px;
+}
+
+#image-float-left {
+    width: 30%;
+    height: 30%;
+    border-radius: 4px;
+    float: left;
+    margin-right: 10px;
 }
