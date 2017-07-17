@@ -27,11 +27,19 @@ export default class ContactMe extends React.Component {
         }
         
         if(email && email.length > 0){
-            $("#emailValidation").hide();
-            $("#email-group").removeClass('form-error');
-            this.refs.email.value = '';
+            $("#emailEmptyValidation").hide();
+
+            var test = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+[^<>()\.,;:\s@\"]{2,})$/;
+            if(test.test(email)){
+                this.refs.email.value = '';
+                $("#emailValidation").hide();
+                $("#email-group").removeClass('form-error');
+            } else {
+                $("#emailValidation").show();
+            }
+            
         } else {
-            $("#emailValidation").show();
+            $("#emailEmptyValidation").show();
             $("#email-group").addClass('form-error');
             hasErrors = true;
         }
@@ -71,7 +79,7 @@ export default class ContactMe extends React.Component {
                         <div className="form-group">
                             <div id="name-group" className="input-group">
                                 <div className="input-group-addon"><i className="fa fa-user-o"></i></div>
-                                <input type="text" ref="name" className="form-control" id="name" placeholder="Name" />
+                                <input type="text" ref="name" className="form-control" id="name" name="name" placeholder="Name" />
                             </div>
                             <div id="nameValidation" className="pull-right">
                                 <label className="label label-danger">Name is required</label>
@@ -80,22 +88,25 @@ export default class ContactMe extends React.Component {
                         <div className="form-group">
                             <div id="email-group" className="input-group">
                                 <div className="input-group-addon"><i className="fa fa-at"></i></div>
-                                <input type="text" ref="email" className="form-control" id="email" placeholder="Email" />
+                                <input type="text" ref="email" className="form-control" id="email" name="email" placeholder="Email" />
+                            </div>
+                            <div id="emailEmptyValidation" className="pull-right">
+                                <label className="label label-danger">Email is required</label>
                             </div>
                             <div id="emailValidation" className="pull-right">
-                                <label className="label label-danger">Email is required</label>
+                                <label className="label label-danger">Please enter a valid email address</label>
                             </div>
                         </div>
                         <div className="form-group">
                             <div id="contactno-group" className="input-group">
                                 <div className="input-group-addon"><i className="fa fa-phone"></i></div>
-                                <input type="text" ref="contactno" className="form-control" id="contactno" placeholder="Contact No" />
+                                <input type="text" ref="contactno" className="form-control" id="contactno" name="contactno" placeholder="Contact No" />
                             </div>
                         </div>
                         <div className="form-group">
                             <div id="message-group" className="input-group">
                                 <div className="input-group-addon"><i className="fa fa-comment-o"></i></div>
-                                <textarea ref="message" className="form-control" id="message" placeholder="Message" />
+                                <textarea ref="message" className="form-control" id="message" name="message" placeholder="Message" />
                             </div>
                             <div id="messageValidation" className="pull-right">
                                 <label className="label label-danger">Please enter a valid message</label>
