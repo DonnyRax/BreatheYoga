@@ -4,7 +4,31 @@
     padding-top: 20px;
 
     .form-group {
+
+        #nameValidation, #emailValidation, #messageValidation {
+            display: none;
+        }
+
         .input-group {
+
+            &.form-error {
+                .input-group-addon {
+                    border-bottom-color: #d9534f;
+                    border-left-color: #d9534f;
+
+                    i {
+                        color: #d9534f;
+                    }
+                }
+
+                input {
+                    border-bottom-color: #d9534f;
+                }
+
+                textarea {
+                    border-bottom-color: #d9534f;
+                }
+            }
 
             .input-group-addon {
                 background: #fff;
@@ -40,6 +64,7 @@
     .btn-default {
         color: $brand-color;
     }
+
 
 }
 

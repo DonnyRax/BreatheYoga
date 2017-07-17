@@ -10,7 +10,9 @@ var Footer = (props) =>  {
                 breathe yoga
             </div>
             <div id="footer-right" className="col-xs-4 center-content footer-block">
-                <i className="fa fa-2x fa-facebook-square"></i>
+                <a href="https://www.facebook.com/yoga.meditation.wellbeing/">
+                    <i className="fa fa-2x fa-facebook-square"></i>
+                </a>
                 <i className="fa fa-2x fa-instagram"></i>
             </div>
         </div>
