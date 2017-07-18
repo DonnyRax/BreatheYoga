@@ -7,6 +7,70 @@ export default class ContactMe extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    componentDidMount(e) {
+        // Variable to hold request
+        var request;
+        var _this = this;
+
+        // Bind to the submit event of our form
+        $("#contact-form").submit(function(event){
+
+            // Prevent default posting of form - put here to work in case of errors
+            event.preventDefault();
+
+            // Abort any pending request
+            if (request) {
+                request.abort();
+            }
+            // setup some local variables
+            var $form = $(this);
+
+            // Let's select and cache all the fields
+            var $inputs = $form.find("input, button, textarea");
+
+            // Serialize the data in the form
+            var serializedData = $form.serialize();
+
+            // Let's disable the inputs for the duration of the Ajax request.
+            // Note: we disable elements AFTER the form data has been serialized.
+            // Disabled form elements will not be serialized.
+            $inputs.prop("disabled", true);
+
+            // Fire off the request to /form.php
+            request = $.ajax({
+                url: "/api/mail.php",
+                type: "post",
+                data: serializedData
+            });
+
+            // Callback handler that will be called on success
+            request.done(function (response, textStatus, jqXHR){
+                _this.refs.name.value = '';
+                _this.refs.email.value = '';
+                _this.refs.contactno.value = '';
+                _this.refs.message.value = '';
+            });
+
+            // Callback handler that will be called on failure
+            request.fail(function (jqXHR, textStatus, errorThrown){
+                // Log the error to the console
+                console.error(
+                    "The following error occurred: "+
+                    textStatus, errorThrown
+                );
+            });
+
+            // Callback handler that will be called regardless
+            // if the request failed or succeeded
+            request.always(function () {
+                // Reenable the inputs
+                $inputs.prop("disabled", false);
+            });
+
+        });
+
+    }
+
     handleSubmit(e) {
         e.preventDefault();
 
@@ -19,7 +83,6 @@ export default class ContactMe extends React.Component {
         if(name && name.length > 0){
             $("#nameValidation").hide();
             $("#name-group").removeClass('form-error');
-            this.refs.name.value = '';
         } else {
             $("#nameValidation").show();
             $("#name-group").addClass('form-error');
@@ -31,7 +94,6 @@ export default class ContactMe extends React.Component {
 
             var test = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+[^<>()\.,;:\s@\"]{2,})$/;
             if(test.test(email)){
-                this.refs.email.value = '';
                 $("#emailValidation").hide();
                 $("#email-group").removeClass('form-error');
             } else {
@@ -42,16 +104,11 @@ export default class ContactMe extends React.Component {
             $("#emailEmptyValidation").show();
             $("#email-group").addClass('form-error');
             hasErrors = true;
-        }
-        
-        if(contactno && contactno.length > 0){
-            this.refs.contactno.value = '';
-        }
+        }        
         
         if(message && message.length > 0){
             $("#messageValidation").hide();
             $("#message-group").removeClass('form-error');
-            this.refs.message.value = '';
         } else {
             $("#messageValidation").show();
             $("#message-group").addClass('form-error');
@@ -59,8 +116,7 @@ export default class ContactMe extends React.Component {
         }
         
         if(!hasErrors){
-            // data in the form
-            $("#contact-form").submit();
+            $("#contact-form").submit();            
         }
     }
        
@@ -75,7 +131,7 @@ export default class ContactMe extends React.Component {
                     </div>
                 </div>
                 <div className="row">
-                    <form id="contact-form" role="form" className="form-horizontal col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8" method="post" action="/api/mail.php">
+                    <form id="contact-form" className="form-horizontal col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8">
                         <div className="form-group">
                             <div id="name-group" className="input-group">
                                 <div className="input-group-addon"><i className="fa fa-user-o"></i></div>

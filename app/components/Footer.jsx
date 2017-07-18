@@ -13,7 +13,7 @@ var Footer = (props) =>  {
                 <a href="https://www.facebook.com/yoga.meditation.wellbeing/">
                     <i className="fa fa-2x fa-facebook-square"></i>
                 </a>
-                <i className="fa fa-2x fa-instagram"></i>
+                {/*<i className="fa fa-2x fa-instagram"></i>*/}
             </div>
         </div>
     )
