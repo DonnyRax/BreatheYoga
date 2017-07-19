@@ -11,7 +11,25 @@ var Testimonials = (props) =>  {
                 </div>
             </div>
             <div className="row">
-                <div className="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 testimonial-container">
+                <div className="col-xs-10 col-xs-offset-1 testimonial-container">
+                    <p className="testimonial testimonial-date">
+                        <i className="fa fa-star"></i>July 19<sup>th</sup> 2017<i className="fa fa-star"></i>
+                    </p>
+                    <p className="testimonial testimonial-content">
+                    "I came to Lizzie as a first timer to Yoga. I'd been wanting to give it a go for years as it's been said 
+                    to reduce injuries and prolong a sporting career (mine is hanging by a thread due to constant injury). 
+                    Lizzie made me feel very comfortable and was great at tailoring the sessions to my ability, working 
+                    around my wrist injury following an op.
+                    </p>                
+                    <p className="testimonial testimonial-content">
+                    We were only a small class but came with a range of abilities. Lizzie has a very calming voice which lends itself to the relaxation and meditation.
+                    </p>
+                    <p className="testimonial testimonial-content">
+                    My flexibility has come on significantly and joints feeling stronger already after 6 weeks."
+                    </p>
+                    <p className="testimonial tesimonial-signature pull-right">Tom Hill</p>
+                </div>
+                <div className="col-xs-10 col-xs-offset-1 testimonial-container">
                     <p className="testimonial testimonial-date">
                         <i className="fa fa-star"></i>July 2<sup>nd</sup> 2017<i className="fa fa-star"></i>
                     </p>
@@ -27,7 +45,7 @@ var Testimonials = (props) =>  {
                     <p className="testimonial testimonial-content">
                     I would recommend without hesitation to anyone, whether they are a complete beginner or an advance yogi."
                     </p>
-                    <p className="testimonial tesimonial-signature pull-right">Annie, Watford</p>
+                    <p className="testimonial tesimonial-signature pull-right">Annie</p>
                 </div>
             </div>
         </div>
