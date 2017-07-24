@@ -2,6 +2,15 @@ import React from 'react'
 import {Link, IndexLink} from 'react-router';
 
 export default class Nav extends React.Component {
+
+    componentDidMount(e){
+        $(document).on('click','.navbar-collapse.in',function(e) {
+            if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+                $(this).collapse('hide');
+            }
+        });
+    }
+
 	render() {
 		return (
 			<nav className="navbar navbar-default" role="navigation">

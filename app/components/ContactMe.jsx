@@ -49,6 +49,8 @@ export default class ContactMe extends React.Component {
                 _this.refs.email.value = '';
                 _this.refs.contactno.value = '';
                 _this.refs.message.value = '';
+
+                $(".alert-success").toggleClass("hidden");
             });
 
             // Callback handler that will be called on failure
@@ -58,6 +60,8 @@ export default class ContactMe extends React.Component {
                     "The following error occurred: "+
                     textStatus, errorThrown
                 );
+
+                $(".alert-danger").toggleClass("hidden");
             });
 
             // Callback handler that will be called regardless
@@ -128,6 +132,18 @@ export default class ContactMe extends React.Component {
                         <div className="page-header">
                             <h3 className="page-header-title">Contact Me</h3>
                         </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-xs-offset-1 col-xs-10 col-md-offset-2 col-md-8">
+                        <div className="alert alert-success alert-dismissible hidden" role="alert">
+                            <button type="button" className="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            Message sent! I will endevour to respond within 24 hours.
+                        </div>    
+                        <div className="alert alert-danger alert-dismissible hidden" role="alert">
+                            <button type="button" className="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            Message not sent! An error has occured. Please try again.
+                        </div>    
                     </div>
                 </div>
                 <div className="row">
