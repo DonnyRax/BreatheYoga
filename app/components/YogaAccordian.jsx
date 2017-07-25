@@ -35,7 +35,7 @@ var Yoga = (props) =>  {
                                         wish to improve. This programme will consist of a weekly 1.5 hour session plus exercises for you to 
                                         practice daily at home. 
                                     </p>
-                                    <p>Package also includes:</p>
+                                    <p>Package includes:</p>
                                     <ul className="package-list">
                                         <li>Nutrition guide</li>
                                         <li>24/7 support through telephone and email</li>
@@ -61,22 +61,22 @@ var Yoga = (props) =>  {
                                     <p>This six week course will introduce a variety of postures and their benefits, 
                                     a variety of breathing techniques and their benefits and guide you in relaxation 
                                     and meditation techniques.</p>
-                                    <p>Package also includes:</p>
+                                    <p>Package includes:</p>
                                     <ul className="package-list">
                                         <li>12 x 1 hour 15 mins yoga and meditation classes</li>
                                         <li>Yoga mat</li>
                                         <li>Nutrition guide</li>
-                                        <li>24/7 support through ‘breathe together beginners’ whatsapp group</li>
+                                        <li>24/7 support through ‘breathe together intermediate’ whatsapp group</li>
                                         <li>Learning support materials</li>
                                         <li>Relaxation audio</li>
                                         <li>Guided meditation audio</li>
                                     </ul>
                                     <p><i className="fa fa-heart-o"></i><b>Intermediate Class: 2x per week paid monthly</b></p>
-                                    <p>Package also includes:</p>
+                                    <p>Package includes:</p>
                                     <ul className="package-list">
                                         <li>2 x 1 hour 15 mins yoga and meditation classes per week</li>
                                         <li>Nutrition guide</li>
-                                        <li>24/7 support through ‘breathe together beginners’ whatsapp group</li>
+                                        <li>24/7 support through ‘breathe together intermediate’ whatsapp group</li>
                                         <li>Learning support materials</li>
                                         <li>Relaxation audio</li>
                                         <li>Guided meditation audio</li>
@@ -95,7 +95,7 @@ var Yoga = (props) =>  {
                             <div id="collapseThree" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div className="panel-body">
                                     <p><i className="fa fa-heart-o"></i><b>Corporate classes for staff wellbeing</b></p>
-                                    <p>Package also includes:</p>
+                                    <p>Package includes:</p>
                                     <ul className="package-list">
                                         <li>4 x 1 hour 15 mins yoga and meditation classes</li>
                                         <li>Nutrition guide for all staff members</li>
@@ -117,7 +117,8 @@ var Yoga = (props) =>  {
                             </div>
                             <div id="collapseFour" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                 <div className="panel-body">
-                                    <p><i className="fa fa-heart-o"></i><b>Health and wellbeing retreats: yoga, meditation, HIIT training, nutrition advice, personalised programmes</b></p>
+                                    {/*<p><i className="fa fa-heart-o"></i><b>Health and wellbeing retreats: yoga, meditation, HIIT training, nutrition advice, personalised programmes</b></p>*/}
+                                    <p><i className="fa fa-heart-o"></i><b>Coming soon</b></p>
                                 </div>
                             </div>
                         </div>
