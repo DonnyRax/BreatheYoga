@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from 'Footer'
+
 
 export default class Home extends React.Component {
     constructor(props) {
@@ -23,8 +23,24 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div id="home-image-container" className="col-xs-12 col-md-8 center-content">
+                    <div id="home-image-container" className="col-xs-12 col-md-8">
                         <img id="yoga-image" className="img-responsive" src="./content/images/yoga2.jpg" alt="yoga"/>
+
+                        <div id="home-page-intro">
+                            <h2><span className="brand-text">Life today can be stressful.</span></h2>
+
+                            <p>Responsibilities, worries, pressures and fears can build up inside us, and, unless we can release them in some way, can cause a variety of health problems, both physical and mental.</p>
+
+                            <p>'<span className="brand-text">breathe</span>' offers yoga and meditation classes designed to help you release these tensions, creating better health and wellbeing:</p>
+                            <ul>
+                                <li>Personalised programs for individuals</li>
+                                <li>Beginner and intermediate classes for small groups</li>
+                                <li>Corporate packages to improve staff wellness.</li>
+                            </ul>
+                            <p>Create space in your mind to find peace, happiness, awareness and perspective.</p>
+
+                            <p><span className="brand-text slogan-text">Create space and time to be you.</span></p>
+                        </div>
                     </div>
                     <div className="col-xs-12 col-md-4">
                         <div className="panel panel-brand">
@@ -32,9 +48,8 @@ export default class Home extends React.Component {
                                 <h3 className="panel-title">Upcoming Events</h3>
                             </div>
                             <div className="panel-body">
-                                Outdoor yoga classes in Cassiobury Park over the summer, weather dependent. It will be 
-                                £5 a class and you will need to bring your own yoga mat. Exact location, days and times will 
-                                be announced soon right here!
+                                First 'breathe in the park' session will be Wednesday 2nd August at 6pm. Meet by the iconic 
+                                cedar tree with your yoga mat. All ages welcome.
                             </div>
                         </div>
                         <div className="panel panel-brand">
@@ -45,7 +60,7 @@ export default class Home extends React.Component {
                     </div>
 
                 </div>
-                <Footer/>
+                
             </div>
         )
     }

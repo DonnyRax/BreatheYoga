@@ -31,7 +31,7 @@ module.exports = {
 			Nav: 'app/components/Nav.jsx',
       Home: 'app/components/Home.jsx',
       About: 'app/components/About.jsx',
-      Yoga: 'app/components/YogaAccordian.jsx',
+      Yoga: 'app/components/Yoga.jsx',
       Testimonials: 'app/components/Testimonials.jsx',
       ContactMe: 'app/components/ContactMe.jsx',
       Footer: 'app/components/Footer.jsx',

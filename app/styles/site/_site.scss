@@ -60,7 +60,7 @@ span.icon-text {
 }
 
 .about-yoga-list {
-    list-style: disc;
+    list-style: none;
     margin-left: 17px;
     margin-top: 10px;
 }
@@ -70,16 +70,9 @@ span.icon-text {
     color: $brand-color;
 }
 
-.strapline-text {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 48px;
-    font-weight: 400;
-    color: $brand-color;
-    margin-bottom: 20px;
-}
 
 .text-small {
-    font-size: 24px;
+    font-size: 28px !important;
 }
 
 #image-float-right {
@@ -98,3 +91,6 @@ span.icon-text {
     margin-right: 10px;
 }
 
+.brand-text {
+    color: $brand-color;
+}

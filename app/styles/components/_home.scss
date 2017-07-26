@@ -1,0 +1,19 @@
+#home-page-intro {
+    margin-top: 10px;
+    
+    ul {
+        margin-left: 20px;
+        list-style: disc;
+    }
+
+    .slogan-text {
+        font-size: 24px;
+    }
+}
+
+.strapline-text {
+    font-size: 48px;
+    font-weight: 400;
+    color: $brand-color;
+    margin-bottom: 20px;
+}

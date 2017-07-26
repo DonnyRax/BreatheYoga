@@ -55,17 +55,6 @@ var About = (props) =>  {
                         to set up ‘breathe’ so that I can teach others how yoga can be incorporated into daily life to improve 
                         their health and wellbeing.
                     </p>
-                    <p>
-                        Yoga and meditation can:
-                    </p>
-                    <ul className="about-yoga-list">
-                        <li>improve strength, flexibility, posture, focus and balance</li>
-                        <li>reduce stress and tension</li>
-                        <li>increase awareness of your body and mind</li>
-                        <li>improve your digestive system and your nervous system</li>
-                        <li>increase circulation</li>
-                        <li>unblock energy knots</li>
-                    </ul>
                 </div>
             </div>
         </div>
