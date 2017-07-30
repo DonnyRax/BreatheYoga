@@ -8,7 +8,7 @@ export default class Home extends React.Component {
     }
 
     componentDidMount(e){
-        FB.XFBML.parse();
+        this.forceUpdate();
     }
 
     render(){
