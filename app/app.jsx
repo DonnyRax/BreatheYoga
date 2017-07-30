@@ -13,11 +13,11 @@ import ContactMe from 'ContactMe'
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
-		<Route path="about" component={About}/>
-		<Route path="yoga" component={Yoga}/>
-		<Route path="testimonials" component={Testimonials}/>
-		<Route path="contactme" component={ContactMe}/>
-		<IndexRoute component={Home}/>
+			<Route path="about" component={About}/>
+			<Route path="yoga" component={Yoga}/>
+			<Route path="testimonials" component={Testimonials}/>
+			<Route path="contactme" component={ContactMe}/>
+			<IndexRoute component={Home}/>
     </Route>
   </Router>,
   document.getElementById('app')
