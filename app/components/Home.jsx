@@ -48,7 +48,10 @@ export default class Home extends React.Component {
                                 <h3 className="panel-title">Upcoming Events</h3>
                             </div>
                             <div className="panel-body">
-                                First 'breathe in the park' session will be Wednesday 2nd August at 6pm. Meet by the iconic 
+                                First '<span className="brand-text slogan-text">breathe</span> in the park' session will be Wednesday 2<sup>nd</sup> August at 6pm. Meet by the iconic 
+                                cedar tree with your yoga mat. All ages welcome.
+                                <hr/>
+                                '<span className="brand-text slogan-text">breathe</span> in the park' session Thursday 4<sup>th</sup> August at 8pm. Meet by the iconic 
                                 cedar tree with your yoga mat. All ages welcome.
                             </div>
                         </div>
