@@ -43,16 +43,38 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div className="col-xs-12 col-md-4">
-                        <div className="panel panel-brand">
-                            <div className="panel-heading">
-                                <h3 className="panel-title">Upcoming Events</h3>
+                        <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div className="panel panel-brand">
+                                <div className="panel-heading" role="tab" id="headingOne">
+                                <h4 className="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Upcoming Events
+                                    </a>
+                                </h4>
+                                </div>
+                                <div id="collapseOne" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div className="panel-body">
+                                        Coming soon!
+                                    </div>
+                                </div>
                             </div>
-                            <div className="panel-body">
-                                First '<span className="brand-text slogan-text">breathe</span> in the park' session will be Wednesday 2<sup>nd</sup> August at 6pm. Meet by the iconic 
-                                cedar tree with your yoga mat. All ages welcome.
-                                <hr/>
-                                '<span className="brand-text slogan-text">breathe</span> in the park' session Thursday 4<sup>th</sup> August at 8pm. Meet by the iconic 
-                                cedar tree with your yoga mat. All ages welcome.
+                            <div className="panel panel-brand">
+                                <div className="panel-heading" role="tab" id="headingTwo">
+                                <h3 className="panel-title">
+                                    <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Past Events
+                                    </a>
+                                </h3>
+                                </div>
+                                <div id="collapseTwo" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div className="panel-body">
+                                        '<span className="brand-text slogan-text">breathe</span> in the park' session Thursday 4<sup>th</sup> August at 8pm. Meet by the iconic 
+                                        cedar tree with your yoga mat. All ages welcome.
+                                        <hr/>
+                                        First '<span className="brand-text slogan-text">breathe</span> in the park' session will be Wednesday 2<sup>nd</sup> August at 6pm. Meet by the iconic 
+                                        cedar tree with your yoga mat. All ages welcome.        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className="panel panel-brand">
@@ -61,9 +83,7 @@ export default class Home extends React.Component {
                             </div>
                         </div>
                     </div>
-
                 </div>
-                
             </div>
         )
     }
