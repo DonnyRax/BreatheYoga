@@ -35,6 +35,7 @@ module.exports = {
       Testimonials: 'app/components/Testimonials.jsx',
       ContactMe: 'app/components/ContactMe.jsx',
       Footer: 'app/components/Footer.jsx',
+      Gallery: 'app/components/Gallery.jsx',
       applicationStyles: 'app/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']
@@ -56,11 +57,11 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				loaders: ['style', 'css', 'sass']
-			},
-			{
-				test: /\.(woff|woff2|eot|ttf|svg)$/, 
-        		loader: "url" 
-			}
+			},			
+      {
+        test: /\.(jpeg|png|gif|svg)$/i, 
+        loader: "file-loader?name=/public/content/icons/[name].[ext]"
+      }
     ]
   },
   devtool: 'cheap-module-eval-source-map'

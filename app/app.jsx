@@ -9,6 +9,7 @@ import About from 'About'
 import Yoga from 'Yoga'
 import Testimonials from 'Testimonials'
 import ContactMe from 'ContactMe'
+import Gallery from 'Gallery'
 
 ReactDOM.render(
   <Router history={hashHistory}>
@@ -16,6 +17,7 @@ ReactDOM.render(
 			<Route path="about" component={About}/>
 			<Route path="yoga" component={Yoga}/>
 			<Route path="testimonials" component={Testimonials}/>
+			<Route path="gallery" component={Gallery}/>
 			<Route path="contactme" component={ContactMe}/>
 			<IndexRoute component={Home}/>
     </Route>
