@@ -28,7 +28,7 @@ export default class Nav extends React.Component {
                         <li><IndexLink to='/' activeClassName='active-link'><i className="fa fa-home"></i>Home</IndexLink></li>
                         <li><Link to='/about' activeClassName='active-link'><i className="fa fa-user"></i>About</Link></li>
                         <li><Link to='/yoga' activeClassName='active-link'><i className="fa fa-heart"></i>Yoga</Link></li>
-                        <li><Link to='/gallery' activeClassName='active-link'><i className="fa fa-picture-o"></i>Gallery</Link></li>
+                        {/*<li><Link to='/gallery' activeClassName='active-link'><i className="fa fa-picture-o"></i>Gallery</Link></li>*/}
                         <li><Link to='/testimonials' activeClassName='active-link'><i className="fa fa-star"></i>Testimonials</Link></li>
                         <li><Link to='/contactme' activeClassName='active-link'><i className="fa fa-envelope"></i>Contact Me</Link></li>
                     </ul>

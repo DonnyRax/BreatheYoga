@@ -35,8 +35,8 @@ export default class Gallery extends React.Component{
 
 	render() {
 		return (
-            <div class="row">
-                <div class="col-xs-12">
+            <div className="row">
+                <div className="col-xs-12 col-md-offset-1 col-md-10">
                     <ReactGallery>
                         { this.state.sources.map(item => <ReactGallery.Slide { ...item } key={ item.source } />) }
                     </ReactGallery>

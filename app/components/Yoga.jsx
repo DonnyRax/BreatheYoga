@@ -44,7 +44,7 @@ var Yoga = (props) =>  {
                             </div>
                             <div id="collapseOne" className="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                 <div className="panel-body">
-                                    <p><i className="fa fa-heart-o"></i><b>Yoga and Meditation for Health and Wellbeing</b></p>
+                                    <p><i className="fa fa-heart-o"></i><b>Yoga and Meditation for Health and Wellbeing 6-week Programme - £595</b></p>
                                     <p>
                                         This six week individualised programme consists of an initial consultation to discuss your aims and 
                                         objectives of what you would like to achieve through yoga and meditation.  Yoga can help with a variety 
@@ -59,10 +59,12 @@ var Yoga = (props) =>  {
                                     <p>Package includes:</p>
                                     <ul className="package-list">
                                         <li>Nutrition guide</li>
-                                        <li>24/7 support through telephone and email</li>
-                                        <li>Yoga mat</li>
-                                        <li>Learning support materials</li>
-                                        <li>Relaxation audio</li>
+                                        <li>Support through telephone and email</li>
+                                        <li>Yoga mat, block and strap</li>
+                                        <li>Weekly learning support materials</li>
+                                        <li>“breathe for sleep” package</li>
+                                        <li>“breathe before breakfast” package</li>
+                                        <li>Yoga Nidra deep relaxation audio</li>
                                         <li>Guided meditation audio</li>
                                     </ul>
                                 </div>
@@ -78,29 +80,33 @@ var Yoga = (props) =>  {
                             </div>
                             <div id="collapseTwo" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div className="panel-body">
-                                    <p><i className="fa fa-heart-o"></i><b>Beginners Course: 2x per week for 6 weeks</b></p>
-                                    <p>This six week course will introduce a variety of postures and their benefits, 
-                                    a variety of breathing techniques and their benefits and guide you in relaxation 
-                                    and meditation techniques.</p>
+                                    <p><i className="fa fa-heart-o"></i><b>Beginners Course: 5 x 1.5 hrs - £145</b></p>
+                                    <p>This one month course will give you an introduction into how yoga and meditation can be 
+                                        incorporated into daily life. You will be taught a variety of postures (asanas) and their 
+                                        benefits, including asanas to energise you in the morning and asanas to help you relax before 
+                                        sleep. You will be taught a variety of breathing techniques and when, why and how to use them. 
+                                        In addition, the course will guide you in relaxation and meditation techniques that you can use 
+                                        at home. This course is perfect for anyone who suffers from stress or anxiety, has difficulties 
+                                        sleeping, lacks energy in the mornings, or just wants to know more about yoga and how it can 
+                                        benefit your health and wellbeing.</p>
                                     <p>Package includes:</p>
                                     <ul className="package-list">
-                                        <li>12 x 1 hour 15 mins yoga and meditation classes</li>
-                                        <li>Yoga mat</li>
+                                        <li>5 x 1.5 hours yoga and meditation classes</li>
+                                        <li>Yoga mat, block and strap</li>
                                         <li>Nutrition guide</li>
-                                        <li>24/7 support through ‘breathe together intermediate’ whatsapp group</li>
-                                        <li>Learning support materials</li>
-                                        <li>Relaxation audio</li>
+                                        <li>24/7 support through ‘breathe together beginners’ whatsapp group</li>
+                                        <li>Weekly learning support materials</li>
+                                        <li>“breathe for sleep” package</li>
+                                        <li>“breathe before breakfast” package</li>
+                                        <li>Yoga Nidra deep relaxation audio</li>
                                         <li>Guided meditation audio</li>
                                     </ul>
-                                    <p><i className="fa fa-heart-o"></i><b>Intermediate Class: 2x per week paid monthly</b></p>
+                                    <p><i className="fa fa-heart-o"></i><b>Beginners/Intermediate Classes: 1 x 1.25 hrs per week paid monthly - £49</b></p>
                                     <p>Package includes:</p>
                                     <ul className="package-list">
-                                        <li>2 x 1 hour 15 mins yoga and meditation classes per week</li>
-                                        <li>Nutrition guide</li>
-                                        <li>24/7 support through ‘breathe together intermediate’ whatsapp group</li>
-                                        <li>Learning support materials</li>
-                                        <li>Relaxation audio</li>
-                                        <li>Guided meditation audio</li>
+                                        <li>1 x 1.25 hrs yoga and meditation class per week</li>
+                                        <li>24/7 support and community through ‘breathe together’ whatsapp group</li>
+                                        <li>Weekly learning support materials: videos, audios, handouts, sequences, etc.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -115,31 +121,19 @@ var Yoga = (props) =>  {
                             </div>
                             <div id="collapseThree" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div className="panel-body">
-                                    <p><i className="fa fa-heart-o"></i><b>Corporate classes for staff wellbeing</b></p>
-                                    <p>Package includes:</p>
+                                    <p><i className="fa fa-heart-o"></i><b>Corporate Packages for staff wellbeing. Prices vary depending on package</b></p>
+                                    <p>Packages can include:</p>
                                     <ul className="package-list">
-                                        <li>4 x 1 hour 15 mins yoga and meditation classes</li>
-                                        <li>Nutrition guide for all staff members</li>
+                                        <li>Yoga and meditation classes/workshops</li>
+                                        <li>Yoga mats, blocks and straps</li>
+                                        <li>Nutrition guide</li>
                                         <li>Desk Yoga guide</li>
-                                        <li>24/7 support through ‘breathe wellbeing’ Facebook group</li>
-                                        <li>Relaxation audio</li>
+                                        <li>“breathe for sleep” package</li>
+                                        <li>“breathe before breakfast” package</li>
+                                        <li>Yoga Nidra deep relaxation audio</li>
                                         <li>Guided meditation audio</li>
+                                        <li>24/7 support through ‘breathe wellbeing’ Facebook group</li>
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="panel panel-brand">
-                            <div className="panel-heading" role="tab" id="headingFour">
-                            <h4 className="panel-title">
-                                <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                breathe retreats
-                                </a>
-                            </h4>
-                            </div>
-                            <div id="collapseFour" className="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                <div className="panel-body">
-                                    {/*<p><i className="fa fa-heart-o"></i><b>Health and wellbeing retreats: yoga, meditation, HIIT training, nutrition advice, personalised programmes</b></p>*/}
-                                    <p><i className="fa fa-heart-o"></i><b>Coming soon</b></p>
                                 </div>
                             </div>
                         </div>
