@@ -23,6 +23,11 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 <div className="row">
+                    <div className="col-xs-offset-0 col-xs-12 col-sm-8 col-sm-offset-2">
+                        <img className="img-responsive" src="./content/images/breathe-together.png" alt="breathe-together" />
+                    </div>
+                </div>
+                <div className="row">
                     <div id="home-image-container" className="col-xs-12 col-md-8">
                         <img id="yoga-image" className="img-responsive" src="./content/images/yoga2.jpg" alt="yoga"/>
 
@@ -43,6 +48,11 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div className="col-xs-12 col-md-4">
+                        {/*<div className="panel panel-brand">
+                            <div className="panel-body">
+                            <img className="img-responsive" src="./content/images/breathe-together.png" alt="breathe-together" />
+                            </div>
+                        </div>*/}
                         <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div className="panel panel-brand">
                                 <div className="panel-heading" role="tab" id="headingOne">
